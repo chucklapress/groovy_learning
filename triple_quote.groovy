@@ -47,3 +47,9 @@ println multi[0][1]
 
 def numArr = [1, 2, 3] as int[]
 println numArr[1]
+
+/**
+  * Example of a Groovy slashy string and groovy doc comment
+  */
+def otherfooPattern = /...yikes..../
+println otherfooPattern
