@@ -53,3 +53,19 @@ println numArr[1]
   */
 def otherfooPattern = /...yikes..../
 println otherfooPattern
+
+/**
+  * Example of a Groovy spread operator
+  */
+class Car {
+    String make
+    String model
+}
+def cars = [
+        new Car(make: 'Dodge', model: 'Ram'),
+        new Car(make: 'Ford', model: 'Explorer'),
+        new Car(make: 'Chevy', model: 'Silverado')]
+def makes = cars*.make
+def models = cars*.model
+println makes[2]
+println models[1]
